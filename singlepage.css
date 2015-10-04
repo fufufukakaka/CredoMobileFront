@@ -7,7 +7,7 @@
 /*********************************************************************************/
 
 #header {
-    font-family: Helvetica,Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     width: 100%;
     margin: 0 auto;
     font-size: 16px;
@@ -34,7 +34,7 @@
 
 .info {
     margin: 0 auto;
-    font-family: Kokuri,Arial, sans-serif;
+    font-family: Kokuri, Arial, sans-serif;
     width: 90%;
     border-bottom: solid 2px #999999;
 }
@@ -42,14 +42,14 @@
 .info ul {
     padding: 0;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     width: 100%;
     height: auto;
 }
 
 .info ul li {
-    font-size: 16px;
-    font-family: Koruri,Arial, sans-serif;
+    font-size: 14px;
+    font-family: Koruri, Arial, sans-serif;
     width: auto;
     height: auto;
     display: inline-block;
@@ -90,7 +90,7 @@
 /*********************************************************************************/
 
 #sentence {
-    font-family: Helvetica,Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0 auto;
     font-size: 20px;
     width: 90%;
@@ -99,7 +99,7 @@
 }
 
 #contact_wrapper {
-    font-family: Koruri,Arial, sans-serif;
+    font-family: Koruri, Arial, sans-serif;
     width: 90%;
     height: auto;
     display: table;
@@ -109,7 +109,7 @@
 }
 
 #follow {
-    font-family: Koruri,Arial, sans-serif;
+    font-family: Koruri, Arial, sans-serif;
     margin: 10% auto;
     position: relative;
     background: #fff;
@@ -118,7 +118,7 @@
 }
 
 #others {
-    font-family: Koruri,Arial, sans-serif;
+    font-family: Koruri, Arial, sans-serif;
     font-size: 16px;
     margin: 5% auto;
     position: relative;
@@ -170,16 +170,6 @@
     background: #fff;
 }
 
-.nextpage:hover,
-.nextpage:active {
-    color: #0e83cd;
-}
-
-.nextpage:hover:after,
-.nextpage:active:after {
-    height: 100%;
-}
-
 .pagenation {
     width: 100%;
     margin: 0 auto;
@@ -226,15 +216,6 @@ li.active {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-}
-
-.pagenation li a:hover {
-    background-color: #FEE8CA;
-    color: #0e83cd;
-    opacity: 0.8;
-    transition-duration: 500ms;
-    transition-property: all;
-    transition-timing-function: ease;
 }
 
 
@@ -392,14 +373,14 @@ ul.buttons-icon li {
 
 #others .info h4 {
     font-size: 18px;
-    font-family: Kokuri,Arial, sans-serif;
+    font-family: Kokuri, Arial, sans-serif;
     text-align: left;
     margin: 0;
 }
 
 #others ul li .info {
     margin-left: 20px;
-    font-family: Kokuri,Arial, sans-serif;
+    font-family: Kokuri, Arial, sans-serif;
     width: 40%;
     border: none;
     float: left;
@@ -416,7 +397,7 @@ ul.buttons-icon li {
 
 #others ul li .info ul li {
     font-size: 16px;
-    font-family: Koruri,Arial, sans-serif;
+    font-family: Koruri, Arial, sans-serif;
     width: auto;
     height: auto;
     vertical-align: top;
