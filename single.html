@@ -16,35 +16,11 @@
     <meta name="viewport" content="width=device-width">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="navbutton.js"></script>
+    <script type="text/javascript" src="modalwindow.js"></script>
     <link rel="stylesheet" type="text/css" href="common.css">
     <link rel="stylesheet" type="text/css" href="singlepage.css">
 </head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script>
-    $(function () {
-        var count = 200;
-        $("#sentence").each(function () {
-            var thisText = $(this).text();
-            var textLength = thisText.length;
-            if (textLength > count) {
-                var showText = thisText.substring(0, count);
-                var hideText = thisText.substring(count, textLength);
-                var insertText = showText;
-                insertText += '<span class="hide">' + hideText + '</span>';
-                insertText += '<span class="omit">......</span>';
-                insertText += '<div id="button">もっと読む</div>';
-                $(this).html(insertText);
-            };
-        });
-        $('.hide').hide();
-        $('#button').click(function () {
-            $(this).hide()
-                .prev('.omit').hide("fast")
-                .prev('.hide').show(1500);
-            return false;
-        });
-    });
-</script>
 
 <body>
     <div id="fb-root"></div>
@@ -58,6 +34,13 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+    <div class="modal wd1">
+        <div class="modalBody">
+            <p class="close">×close</p>
+            <p>…..</p>
+        </div>
+        <div class="modalBK"></div>
+    </div>
     <!-- Header -->
     <header>
         <!-- Nav -->
@@ -95,6 +78,8 @@
             </section>
             <section id="sentence">
                 <p>まずはこちらの画像をご覧ください。</p>
+                <div class="btns">
+                    <img data-tgt="wd1" class="alignnone wp-image-10474" src="http://credo.asia/wp-content/uploads/2015/05/job80.png" alt="job80" /></div>
                 <p>この図では各職業を特徴毎にまとめて位置づけ、それぞれについてどのくらいの職業が人工知能に取って代わられてしまう可能性が高いか、その割合を書き記しています。</p>
                 <p>前編『日本版・10年後なくなる可能性が高い職業とは(前編)』ではこうした俯瞰的な視点は持たず、具体的な職業名をあげながら人工知能との関連性を見ていきました。中でも、コックと航空管制官については詳しく検討しましたが、その他の職業についてはどうでしょうか？</p>
                 <p>本来は、各職業について細かく見ていきたいところですが、調査対象になった職業全ての「将来」について見ていくことは非常に大変です。</p>

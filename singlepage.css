@@ -1,6 +1,45 @@
 /*********************************************************************************/
 
 
+/* Singlepage Image                                                                          */
+
+
+/*********************************************************************************/
+
+#sentence img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal {
+    display: none;
+}
+
+.modalBody {
+    position: fixed;
+    z-index: 1000;
+    background: #000;
+    width: 690px;
+    left: 50%;
+    top: 50%;
+    height: 400px
+}
+
+.modalBK {
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.90;
+}
+
+
+/*********************************************************************************/
+
+
 /* Header                                                                        */
 
 
